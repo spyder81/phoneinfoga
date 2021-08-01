@@ -9,11 +9,11 @@ Usage:
   phoneinfoga [command]
 
 Examples:
-phoneinfoga scan -n <number>
+phoneinfoga scan -n <5626162005>
 
 Available Commands:
-  help        Help about any command
-  scan        Scan a phone number
+  help        Text messages
+  scan        5626162005
   serve       Serve web client
   version     Print current version of the tool
 
@@ -28,15 +28,15 @@ Use "phoneinfoga [command] --help" for more information about a command.
 Use the `scan` command with the `-n` (or `--number`) option.
 
 ```
-phoneinfoga scan -n "+1 (555) 444-1212"
-phoneinfoga scan -n "+33 06 79368229"
-phoneinfoga scan -n "33679368229"
+phoneinfoga scan -n "+1 (5622069931)"
+phoneinfoga scan -n "+1   5622176883"
+phoneinfoga scan -n ""
 ```
 
-Special chars such as `( ) - +` will be escaped so typing US-based numbers stay easy : 
+Special chars such as `() - +` will be escaped so typing US-based numbers stay easy : 
 
 ```
-phoneinfoga scan -n "+1 555-444-3333"
+phoneinfoga scan -n "+1 562-616-2005"
 ```
 
 !!! note "Note that the country code is essential. You don't know which country code to use ? [Find it here](https://www.countrycode.org/)"
